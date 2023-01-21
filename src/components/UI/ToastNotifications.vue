@@ -45,9 +45,7 @@ export default{
     components: { Notification },
     methods: {
         removeToast(timestamp){
-            this.items = this.items.filter(el => {
-                el.timestamp !== timestamp
-            })
+            this.items = this.items.filter(el => el.timestamp !== timestamp)
         },
         pushToast(item){
             if(this.items.length >5){
